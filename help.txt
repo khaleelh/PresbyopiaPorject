@@ -1,0 +1,43 @@
+How​ ​to​ ​use
+
+GENERAL:
+Only​ ​the​ ​right​ ​side​ ​of​ ​the​ ​screen​ ​is​ ​intractable.
+
+The​ ​right​ ​side​ ​of​ ​the​ ​screen​ ​acts​ ​like​ ​a ​normal​ ​web​ ​browser.
+
+Click​ ​and​ ​drag​ ​the​ ​dots​ ​to​ ​move​ ​them.
+
+Scroll​ ​up​ ​and​ ​down​ ​on​ ​the​ ​dots​ ​to​ ​change​ ​their​ ​size.
+
+
+OPENING​ ​A ​​PDF:
+
+Drag​ ​and​ ​drop​ ​the​ ​file​ ​you​ ​want​ ​to​ ​open​ ​onto​ ​the​ ​right​ ​side​ ​of​ ​the​ ​screen
+
+OPTIONS:
+Help:​ ​Open​ ​this​ ​document.
+
+Move​ Dots:​ ​Toggle​ ​being​ ​able​ ​to​ ​move​ ​the​ ​dots​ ​on​ ​and​ ​off.
+
+Change​ ​Dot​ ​Size:​ ​Toggle​ ​being​ ​able​ ​to​ ​change​ ​the​​ size​​ of​ the​ dots.
+
+Windows SHORT-CUTS:
+(Mac users replace ctrl with command)
+
+Quit​​: ctrl​ ​q
+Undo​: ctrl​ ​z
+Redo​​: ​ctrl-shift-z
+Cut:​ ctrl​​ x
+Copy:​ ctrl​​ c
+Paste:​ ctrl​​ v
+Paste​ and​ match​ style:​ ctrl-shift​ ​v
+Delete:?
+Select​ ​All:​ ctrl a
+Reload​: ctrl​​ r
+Force​ ​reload​: ctrl​​ period
+Reset zoom(actual size): ctrl 0
+Toggle​ ​Developer​​ tools:​ F12
+Toggle​ ​full​ ​screen​:alt​​ x
+Minimized:​ alt​ ​n
+Close:​ ctrl​ w
+Help Page:​ ​F1

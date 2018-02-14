@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html onmousemove="dotMoved(event)">
+  <head>
+    <!-- Ensure module does not overwrite jQuery -->
+    <script>window.module = module; module = undefined;</script>
+
+    <!-- Import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Reassign local module -->
+    <script>module = window.module</script>
+
+    <!-- Import CSS style sheets -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <!-- Hide main scroll bar as internal scroll bar will be used
+       Set functions to be used in repsonse to events caught by body -->
+  <body style="overflow:hidden" onresize="reLocateReSize()" onload="onLoadTasks()">
+
+  <!-- Set up all tags for side nav bar -->
+  <div id="mySidenav" class="sidenav">
+      <!-- Set up method to close side nav bar -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Set up text and responses associated with each option in nav bar -->
+      <a href="help.txt" target='_blank' >Help</a>
+      <a href="#" id="LockP" onclick="lockplace()">Move Dots:On</a>
+      <a href="#" id="LockS" onclick="Locksize()">Change Dot Size:On</a>
+  </div>
+
+   <!-- Set up all items for web page navigation -->
+   <div id="controls" class="ui-widget">
+          <!-- Set up forward and back buttons for navigation between previously accessed pages -->
+          <input id="backButton" class="button" type="image" src="images/leftArrow.png" height = "" width = "" onclick="backButtonClicked()"></input>
+          <input id="forwardButton" class="button" type="image" src="images/rightArrow.png" onclick="forwardButtonClicked()"></input>
+
+          <!-- Set up home and reload buttons for navigation to home page and page refresh -->
+          <input id="home" class="button" type="image" src="images/home.png" onclick="goHomeButtonClicked()"></input>
+          <input id="reload" class="button" type="image" src="images/refresh.png" onclick="refreshButtonClicked()"></input>
+
+          <!-- Set up search bar and autocomplete input -->
+          <input id="tags" class="ui-autocomplete-input" autocomplete="off" type="search" onsearch="Search()" onkeyup="getAutoCompleteTags(event)"></input>
+          <input id="go" class="button" type="image" src="images/search.png" onclick="Search()"></input>
+
+          <!-- Set up options button -->
+          <input id="options" class= "button" type="image" src="images/gear.png" onclick="openNav()"></input>
+    </div>
+
+   <!-- Set up dot images to be moved around screen -->
+   <img id="picture1" class="dot1" src="images/dot.png" draggable="false" onmousedown="dotClicked(event)" onmouseup="dotReleased(event)" onwheel="dotScrolled(event)"></img>
+   <img id="picture2" class="dot2" src="images/dot.png" draggable="false" onmousedown="dotClicked(event)" onmouseup="dotReleased(event)" onwheel="dotScrolled(event)"></img>
+
+   <!-- Set up bar image to cover second scroll bar -->
+   <img id="picture3" class="scrollBar" src='images/bar.png'></img>
+
+   <!-- Import Javascript file for methods -->
+   <script language="javascript" src = "script.js"></script>
+
+  <div class="main">
+      <div class="pages">
+          <!-- Create doubled page on the left -->
+          <div id="left" class="left">
+              <img id="copypage" class="copypage" draggable="false"></img>
+          </div>
+          <!-- Create webview (nested web browser) source -->
+          <div id="right" class="right">
+              <webview id="page" class="page" src="https://www.google.com/">
+              </webview>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
